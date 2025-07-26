@@ -54,7 +54,7 @@ jobs:
                 #need to get some information about the pull request, if any
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |
-                .\.sonar\scanner\dotnet-sonarscanner begin /k:"" /o:"" d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
+                .\.sonar\scanner\dotnet-sonarscanner begin /k:"wstran118_devsecops-dotnet-github-actions-end-to-end-assignment" /o:"wstran118" d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
                 dotnet build SomeConsoleApplication.sln
                 .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
 
