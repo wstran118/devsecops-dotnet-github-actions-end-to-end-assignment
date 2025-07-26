@@ -2,7 +2,7 @@ name: Build code, run unit test, run SAST, SCA, DAST security scans for .NET App
 on: 
     push:
         branches: 
-            - main
+            - master
     pull_request:
         types: 
          - opened
